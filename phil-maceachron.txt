@@ -1,1 +1,42 @@
 Hello world :D
+
+Stretch Goals:
+
+ Research and understand what a merge conflict is and how to resolve it.
+
+    A merge conflict is when two branches that are attempting to merge together have both changed the same item such that they cannot merge without a developer deciding which change is final. 
+
+    To resolve the conflict, if it's a small, like changing code on the same line, you may be able to resolve it in the GitHub conflict editor. For larger differences, 
+    like if one branch deletes a file that another branch has made edits to, then you may need to use the command line to resolve the conflict.
+
+    **** read more about resolving conflicts
+
+ Reseach the Git commands pull, rebase, merge. These commands will allow you to bring in changes that other developers push to the master branch.
+
+    'git pull' adds in changes from a remote repository into the current branch. this updates the local repo to match the remote repo, apart from any changes made to the local repo. 
+
+    'git rebase' and 'git merge' are both ways of integrating changes from one branch to another
+
+    'git rebase' makes it seem as if you made a branch from a different commit, by creating new commits and applying them to that base
+    you may use 'rebase' when the master branch has progressed since you made the branch you're working in, and you want to commit your changes as if you've been working from the latest branch.
+
+    'git merge' can be used to incorprate changes made in the master branch into a working branch, creating a new "merge commit" when it does so. 
+    It's simpler than rebase in many ways, but can give a messy project history. 
+
+ Reseach the Git commands reset , revert, clean. These commands will allow you to go back and ammends previous commits you have made.
+
+    'git reset' - had differnt mode options (soft, mixed and hard). It move the head pointer to the specified commit, and may undo local changes to the Staging Index and the Working Directory
+        the Working Directory is the tree which is in sync with the local files and changes
+        the Staging Index tree is where files with changes that have been added with "git add" are staged
+
+    'git revert' - undoes changes by making a new commit that inverts those changes you want to undo. allows you to undo changes to a repos commit history.
+
+    'git clean' - deletes new files in a directory that have not yet been added to the staging index by the 'git add' command 
+
+ Research and set up a Graphical User Interface (GUI) Git console.
+
+    Going to stick with using the Terminal for now to get used to it. I've messed a little with Github Desktop on my old windows PC.
+
+ Research and setup SSH keys with Github, so that you do not need to input your username/password each time you push.
+
+    Done!
